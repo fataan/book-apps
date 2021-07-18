@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main,
+header {
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Rubik',sans-serif;
+    color: #0A1256;
+    font-weight: 500;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_bar_title {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+header {
+    margin-top: 80px;
+    text-align: center;
+}
+
+input[type='text'],
+input[type='number'],
+#bookSubmit{
+    width: 350px;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+}
+
+#bookSubmit {
+    background-color: #0A1256;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+.input_section {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+}
+
+#inputBook {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 5px;
+}
+
+.input_inline > label {
+    margin-right: 15px;
+}
+
+.input_inline {
+    display: flex;
+    align-items: center;
+}
+
+.side {
+    width: 350px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.book_list {
+    padding: 15px 15px;
+    border: 2px solid #0A1256;
+    border-radius: 10px;
+}
+
+.book_item {
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 15px;
+}
+
+.book_item:hover {
+    background-color: #dee1fc;
+}
+
+.action {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    align-items: center;
+    justify-self: end;
+}
+
+.trash {
+    justify-self: end;
+    background: url(img/delete.svg);
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.complete_book {
+    background: url(img/complete.svg);
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.uncomplete_book {
+    background: url(img/Uncomplete.svg);
+    background-size: contain;
+    width: 30px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
